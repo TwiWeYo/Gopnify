@@ -5,5 +5,9 @@
 	<title>Gopnify Me</title>
 </head>
 <body>
+		<p>Введите текст, который хотите преобразовать</p>
+		<input id="text-id" type="text" placeholder="текст">
+		<input onclick="gopnify(document.getElementById('text-id').value)" type="button" value="Провинционализировать">
+		<p id ="gop"></p>
 	<script type="text/javascript" src="scripts/gopnify.js"></script>
 </body>
