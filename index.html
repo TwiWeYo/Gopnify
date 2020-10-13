@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="styles/mystyle.css">
 	<meta charset="utf-8" />
 	<title>Gopnify Me</title>
 </head>
 <body>
-		<p>Введите текст, который хотите преобразовать</p>
-		<input id="text-id" type="text" placeholder="текст">
-		<input onclick="gopnify(document.getElementById('text-id').value)" type="button" value="Провинционализировать">
-		<p id ="gop"></p>
+	<p class="todo">Введите текст, который хотите преобразовать</p>
+	<textarea id="text-id" placeholder="Текст"></textarea> <br>
+	<input class="button" onclick="gopnify(document.getElementById('text-id').value)" type="button" value="Провинционализировать">
+	<div id ="gop"></div>
 	<script type="text/javascript" src="scripts/gopnify.js"></script>
 </body>
